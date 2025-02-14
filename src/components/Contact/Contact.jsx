@@ -17,7 +17,7 @@ const Contact = () => {
       {/* Contact Section */}
       <div className="row gy-4 align-items-center">
         {/* Left Section */}
-        <div className="col-lg-6 col-md-6 text-center text-md-start">
+        <div className="col-lg-6 col-md-6 text-center text-md-start contact-left">
           <h1 className="fw-bold text-gradient">Let's Talk</h1>
           <p>I'm currently available for new projects. Feel free to send me a message.</p>
           <div className="d-flex flex-column gap-3">
