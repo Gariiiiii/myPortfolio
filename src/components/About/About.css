@@ -55,3 +55,54 @@
     transition: 0.5s;
 }
 
+
+/* Responsive Design */
+@media (max-width: 992px) { /* Tablet */
+    .about-sections {
+        flex-direction: column;
+    }
+    .about-sections img {
+        max-width: 250px;
+    }
+    .about-skills .skill-bar {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .about-sections img {
+        max-width: 200px;
+    }
+
+    .about-section .mb-5{
+        margin-bottom: 1.5rem !important;
+    }
+
+    .about-sections .img {
+        margin-bottom: .5rem;
+    }
+
+    .about-sections .about-para{
+        padding: 0 30px;
+    }
+
+    .about-sections .about-para .mb-4{
+        font-size: 14px;
+    }
+
+    .about-skills p {
+        font-size: 13px;
+        font-size: 13px;
+        min-width: 100px;
+    }
+
+    .about-skills .skill-bar {
+        max-width: 90%;
+    }
+    .about-achievement h1 {
+        font-size: 15px;
+    }
+    .about-achievement p {
+        font-size: 10px;
+    }
+}
