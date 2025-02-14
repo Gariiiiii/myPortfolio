@@ -1,0 +1,32 @@
+.hero h1 span{
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    font-size: 1.15rem;
+}
+
+.hero-connect {
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.67%);
+    transition: 0.3s;
+}
+
+.hero-resume{
+    border-radius: 50px;
+    border:2px solid #fff;
+    transition: 0.5s;
+}
+
+.hero-connect:hover{
+    border:2px solid #fff
+}
+
+.hero-resume:hover{
+    border-color: #b415ff;
+    background-color: #191919;
+    color: #fff;
+}
