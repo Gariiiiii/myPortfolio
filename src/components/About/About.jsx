@@ -20,53 +20,51 @@ const About = () => {
   ];
 
 return (
-    <div className='container py-5 about' id='about-section'>
-      {/* Section Header */}
-        <div className='position-relative text-center mb-5'>
-            <h1 className='fw-semibold display-4'>About Me</h1>
-            <img src={theme_pattern} alt='theme-pattern' className='position-absolute bottom-0' />
-        </div>
+<div className='container py-5 about' id='about-section'>
+  <div className='position-relative text-center mb-5'>
+    <h1 className='fw-semibold display-4'>About Me</h1>
+    <img src={theme_pattern} alt='theme-pattern' className='position-absolute bottom-0' />
+  </div>
 
-      {/* About Content */}
-        <div className='row align-items-center about-sections'>
-            <div className='col-md-5 text-center'>
-                <img src={about_profile} alt='profile' className='img-fluid' />
-           </div>
-            <div className='col-md-7'>
-                <div className='mb-4'>
-                    <p>
-                    I am a passionate Frontend Developer, focused on creating interactive and responsive user interfaces with engaging animations.
-                    </p>
-                    <p>
-                    Currently, I’m seeking a frontend developer internship to enhance my skills and contribute to impactful projects.
-                    </p>
-                </div>
+  <div className='row about-sections'>
+    <div className='col-md-5 text-center img'>
+      <img src={about_profile} alt='profile' className='img-fluid' />
+    </div>
+    <div className='col-md-7 about-para'>
+      <div className='mb-4'>
+        <p>
+          I am a passionate Frontend Developer, focused on creating interactive and responsive user interfaces with engaging animations.
+        </p>
+        <p>
+          Currently, I’m seeking a frontend developer internship to enhance my skills and contribute to impactful projects.
+        </p>
+      </div>
 
-          {/* Skills Section */}
-                <div className='about-skills'>
-                    {skills.map(({ skill, width }, index) => (
-                        <div className='d-flex align-items-center mb-3 about-skill' key={index}>
-                            <p className='mb-0 fw-medium' >{skill}</p>
-                            <div className='flex-grow-1 rounded-pill skill-bar'>
-                                <div className='skill-fill' style={{ width }}></div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+      {/* Skills Section */}
+      <div className='about-skills'>
+        {skills.map(({ skill, width }, index) => (
+          <div className='d-flex align-items-center mb-3 about-skill' key={index}>
+            <p className='mb-0 fw-medium'>{skill}</p>
+            <div className='flex-grow-1 rounded-pill skill-bar'>
+              <div className='skill-fill' style={{ width }}></div>
             </div>
-        </div>
-
-      {/* Achievements Section */}
-      <div className='row text-center justify-content-center mt-4'>
-        {achievements.map(({ value, text }, index) => (
-          <div className='col-md-3 about-achievement' key={index}>
-            <h1
-              className='fw-bold'> {value} </h1>
-            <p className='fw-medium'>{text}</p>
           </div>
         ))}
       </div>
     </div>
+  </div>
+
+  {/* Achievements Section */}
+  <div className='row text-center justify-content-center mt-4'>
+    {achievements.map(({ value, text }, index) => (
+      <div className='col-3 col-md-3 about-achievement' key={index}>
+        <h1 className='fw-bold'>{value}</h1>
+        <p className='fw-medium'>{text}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 
