@@ -5,7 +5,7 @@ import user_icon from "../../assets/user_icon.svg";
 const Footer = () => {
   return (
     <div className="footer container py-5">
-      <div className="row justify-content-between align-items-center mb-2">
+      <div className="row justify-content-between align-items-center mb-2 px-3">
         <div className="col-md-6">
            <svg width="109" height="57" viewBox="0 0 109 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M68 42.39C68 41.3438 68.9096 40.53 69.9493 40.6459L101.251 44.136C105.227 44.5794 108.591 41.226 108.161 37.2483C107.713 33.1161 103.434 30.5622 99.5844 32.1306L70.4171 44.0151C69.2629 44.4854 68 43.6363 68 42.39Z" fill="url(#paint0_linear_2205_14)"/>
@@ -32,8 +32,8 @@ const Footer = () => {
       <hr className="bg-light" />
       <div className="row justify-content-between">
         <div className="col-md-6 text-white">© 2025 Garima Rawat. All rights reserved.</div>
-        <div className="col-md-6 d-flex gap-4 justify-content-around">
-          <p className="text-white">Terms of Service</p>
+        <div className="col-md-6 d-flex gap-4 justify-content-around d-none d-md-flex">
+        <p className="text-white">Terms of Service</p>
           <p className="text-white">Privacy Policy</p>
           <p className="text-white">Connect with Me</p>
         </div>
