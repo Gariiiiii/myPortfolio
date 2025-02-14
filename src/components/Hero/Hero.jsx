@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hero.css'
-import profile_img from "../../assets/profile.jpg";
+import profile_img from "../../assets/main_profile.png";
 
 const Hero = () => {
   return (
     <div className="container d-flex flex-column align-items-center gap-2 text-center hero" id='hero-section'>
-      <img src={profile_img} alt="profile-image" className="mt-5" width="250px" height="250px" />
+      <img src={profile_img} alt="profile-image" className="mt-4" width="250px" height="250px" />
 
       <h1 className="w-75 display-5 fw-semibold">
         <span>I'm Garima Rawat,</span> Frontend Developer based in Delhi
