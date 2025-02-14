@@ -30,3 +30,93 @@
     background-color: #191919;
     color: #fff;
 }
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.hero h1 span {
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.hero-connect, .hero-resume {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.hero-connect {
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.67%);
+    color: white;
+}
+
+.hero-resume {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume:hover {
+    border-color: #b415ff;
+    background-color: #191919;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 6px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.70rem;
+        margin-bottom: 15px;
+    }
+}
