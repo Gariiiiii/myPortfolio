@@ -51,3 +51,53 @@ div .form-control:focus {
   outline: none;
 }
 
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .custom-form {
+        padding: 15px;
+    }
+
+    .btn-gradient {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact .text-gradient{
+        background: linear-gradient(270deg, #df8909 35%, #b415ff 100%);
+        background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+    .contact .icon-img{
+        width: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-section p {
+        font-size: 13px;
+    }
+
+    .custom-form {
+        padding: 10px;
+    }
+
+    .btn-gradient {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
