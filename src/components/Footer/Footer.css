@@ -30,3 +30,24 @@
 .btn-gradient:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+    
+    .btn-gradient {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .footer .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
