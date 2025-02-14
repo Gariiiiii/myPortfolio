@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Navbar.css'
-import underline from "../../assets/nav_underline.svg";
 
 const Navbar = () => {
 
