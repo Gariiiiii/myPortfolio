@@ -20,3 +20,32 @@ a.nav-connect:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.navbar-toggler {
+    border: none; 
+  }
+  
+.navbar-toggler-icon {
+    filter: invert(1); 
+  }
+  
+  
+  /* Mobile View */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+        padding: 10px;
+        border-radius: 10px;
+    }
+  
+    .navbar-nav {
+        align-items: center;
+    }
+  
+    .nav-connect {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+    }
+  }
+  
